@@ -1,5 +1,5 @@
 # Leer-je-eigen-documenten-bevragen-met-generatieve-AI
-Deze GitHub Repository geeft inzicht hoe je met behulp van op grote taalmodellen gebaseerde Generatieve-AI je eigen documenten kunt bevragen.
+Deze GitHub Repository geeft inzicht hoe je met behulp van op grote taalmodellen (LLMs) gebaseerde Generatieve-AI je eigen documenten kunt bevragen.
 Een groot nadeel van de huidige generatie grote taalmodellen is dat ze feitelijk functioneren als afgesloten generieke kennisbanken, waarvan de hoeveelheid beschikbare gegevens niet uitbreidbaar (lees, bevroren) en niet op één enkele locatie in het model is opgeslagen, maar over verschillende locaties is verspreid (lees, gedistribueerd).
 Met andere woorden, de opgeslagen kennis is voor mensen onherkenbaar waardoor taalmodellen niet eenvoudig doelgericht zijn te bevragen over een specifiek en actueel kennisdomein. 
 Het is daardooronmogelijk om te bepalen welke gegevens benut zijn om antwoorden te genereren, waardoor waarheidsvinding (fact-checking) nauwelijks mogelijk is. 
