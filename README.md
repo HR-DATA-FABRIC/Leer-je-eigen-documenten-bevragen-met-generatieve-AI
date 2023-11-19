@@ -14,12 +14,12 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 
 | RAG implementatie met Azure + LangChain + OpenAI |
 |-----|
-| 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](##intro) 
+| 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
 | 2. Veligiheidsmaatregelen nemen 
 | 3. xxx
 | 4. xxx
 | 5. xxx
-| 6. DEMO [[DEMO]](##demo).
+| 6. DEMO [[DEMO]](#demo).
 
 
 
@@ -47,9 +47,9 @@ Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-
 
 
 
-## intro
+# intro
 ***********
-## Waarom is RAG nodig als ik met LLMs zoals ChatGPT, Co-Pilot & Bard al mijn eigen documenten kan bevragen?
+## Waarom is RAG nodig als ik met LLMs zoals ChatGPT, CO-Pilot & Bard al mijn eigen documenten kan bevragen?
 
 Gen-AI  applicaties gebaseerd op grote taalmodellen (LLMs) verwijst naar elke vorm van machinaal-lerende (ML) kunstmatige intelligentie (AI) die gebruikt maakt van natuurlijke taal verwerkende (NLP) algoritmen. 
 
@@ -67,6 +67,6 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 ***********
 
 
-## demo
+# demo
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
