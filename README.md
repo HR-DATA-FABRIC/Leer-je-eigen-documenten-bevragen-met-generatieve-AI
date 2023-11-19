@@ -1,5 +1,6 @@
 
-# Leer-je-eigen-documenten-bevragen-met-generatieve-AI
+# Leer-je-eigen-documenten-bevragen
+
 
 <!--
 LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
@@ -11,18 +12,44 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 
 
 
-| Leer RAG te gebruiken om je eigen documenten doelgericht te kunnen bevragen |
+| RAG implementatie met Azure + LangChain + OpenAI |
 |-----|
-| 1. Begrijpen wat RAG wel en niet kan 
-| 2. Ethische overwegingen bediscussiëren 
+| 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
+| 2. Veligiheidsmaatregelen nemen 
 | 3. xxx
 | 4. xxx
 | 5. xxx
-| 6. DEMO [[ChatGPT FACs]](#demo).
+| 6. DEMO [[DEMO]](#demo).
 
 
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
+
+
+
+>Disclaimer: deze tekst is door het gebruik van *"gezond verstand'* tot stand gekomen. <br> Artificiële intelligentie [AI] is gebruikt ter verificatie van de gebruikte bronnen + vertaling van Engelstalige teksten.
+
+
+
+
+  Views since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
+  <br>
+  Unique visitors since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
+
+*****
+### Dit is een data product gemaakt door <br> het [PROMETHEUS DATA SCIENCE LAB](https://github.com/HR-DATA-FABRIC/PROMETHEUS) <br> van de Hogeschool Rotterdam.
+
+*****
+
+
+
+
+
+
+
+# intro
+***********
+## Waarom is RAG nodig als ik met ChatGPT al mijn eigen documenten kan bevragen?
 
 Gen-AI  applicaties gebaseerd op grote taalmodellen (LLMs) verwijst naar elke vorm van machinaal-lerende (ML) kunstmatige intelligentie (AI) die gebruikt maakt van natuurlijke taal verwerkende (NLP) algoritmen. 
 
@@ -37,27 +64,9 @@ Deze tekortkomingen kunnen worden tegengegaan door gebruik te maken van Retrieva
 
 RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-component representeert de journalist die relevante informatie verzamelt, en de generator-component is de schrijver die deze informatie gebruikt om een voor mensen begrijpelijke en waardevolle nieuwsverhaal te schrijven.
 
->Disclaimer: deze tekst is door het gebruik van *"gezond verstand'* tot stand gekomen. <br> Artificiële intelligentie [AI] is gebruikt ter verificatie van de gebruikte bronnen + vertaling van Engelstalige teksten.
-
-
-
-
-  Views since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
-  <br>
-  Unique visitors since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
-
-*****
-### Dit is een data product gemaakt door het [PROMETHEUS DATA SCIENCE LAB](https://github.com/HR-DATA-FABRIC/PROMETHEUS) <br> van de Hogeschool Rotterdam.
-
-*****
-
-
-
-
-
+***********
 
 
 # demo
 ***********
-## Overzicht RAG demo
-***********
+## RAG implementatie met Azure + LangChain + OpenAI
