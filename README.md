@@ -71,8 +71,8 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
 
+#### Importeer de benodigde Python modules
 ````python
-# Importeer de benodigde Python modules
 from dotenv import load_dotenv
 from langchain.llms import AzureOpenAI
 from langchain.document_loaders import UnstructuredFileLoader
