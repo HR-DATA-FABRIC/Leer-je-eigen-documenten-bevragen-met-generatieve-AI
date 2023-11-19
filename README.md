@@ -49,7 +49,7 @@ Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-
 
 # intro
 ***********
-## Waarom is RAG nodig als ik met ChatGPT al mijn eigen documenten kan bevragen?
+## Waarom is RAG nodig als ik met LLMs zoals ChatGPT, Co-Pilot & Bard al mijn eigen documenten kan bevragen?
 
 Gen-AI  applicaties gebaseerd op grote taalmodellen (LLMs) verwijst naar elke vorm van machinaal-lerende (ML) kunstmatige intelligentie (AI) die gebruikt maakt van natuurlijke taal verwerkende (NLP) algoritmen. 
 
