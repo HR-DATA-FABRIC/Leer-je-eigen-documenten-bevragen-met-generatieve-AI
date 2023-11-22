@@ -91,12 +91,16 @@ dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen u
 
 ````python
 # de benodigde Azure deployment information is stored in a .env file
+# in de zelfde directory as dit notebook
 
+
+# omgevings variabelen geschikt in combionatie met OpenAI 0.28.1 package 
 '''
 OPENAI_API_TYPE =     "azure"
-OPENAI_API_VERSION =  "xxxxx"
-OPENAI_API_BASE =     "https://taalmodel01.openai.azure.com/"
+OPENAI_API_VERSION =  "xxxxxx"
+OPENAI_API_BASE =     "https://xxxxxx.openai.azure.com/"
 OPENAI_API_KEY =      "xxxxxx"
+DEPLOYMENT_NAME =     "xxxxxx"
 DEPLOYMENT_NAME =     "xxxxxx"
 '''
 
