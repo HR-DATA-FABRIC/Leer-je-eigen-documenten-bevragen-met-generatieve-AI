@@ -140,13 +140,13 @@ De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF
 
 ````python
 '''
-# from langchain.document_loaders import UnstructuredFileLoader
-# ====> laad een document "sample.pdf' in de variabele "documents"
+# ====> from langchain.document_loaders import UnstructuredFileLoader
+# laad een document "sample.pdf' in de variabele "documents"
 # Partitioning Strategy: "fast" or "accurate"
 # Partitioning Mode: "single", "elements", or "paged
-# single ===> all the text from all elements are combined into one (default)
-# elements ===> maintain individual elements
-# paged ===> texts from each page are only combined
+# single = all the text from all elements are combined into one (default)
+# elements = maintain individual elements
+# paged = texts from each page are only combined
 '''
 
 loader = UnstructuredFileLoader('Sample.pdf', strategy='fast')
@@ -165,6 +165,13 @@ De CharacterTextSplitte functie kan stukken tekst in kleinde sukken verdelen. Er
 
 
 ````python
+'''
+===> from langchain.text_splitter import CharacterTextSplitter
+'''
+text_splitter = CharacterTextSplitter(chunk_size=8000, chunk_overlap=0)
+texts = text_splitter.split_documents(documents)
+
+display(texts)
   ````
 Referenties
 * Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/character_text_splitter
