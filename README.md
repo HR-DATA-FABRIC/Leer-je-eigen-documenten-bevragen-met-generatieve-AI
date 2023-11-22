@@ -10,8 +10,6 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 
 ## Context & Doelen
 
-
-
 | RAG implementatie met Azure + LangChain + OpenAI |
 |-----|
 | 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
@@ -21,32 +19,18 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 | 5. Jupyter Notebook installeren
 | 6. DEMO [[DEMO]](#demo).
 
-
-
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
-
-
 
 >Disclaimer: deze tekst is door het gebruik van *"gezond verstand'* tot stand gekomen. <br> Artificiële intelligentie [AI] is gebruikt ter verificatie van de gebruikte bronnen + vertaling van Engelstalige teksten.
 
-
-
+Dit is een data product gemaakt door het [PROMETHEUS DATA SCIENCE LAB](https://github.com/HR-DATA-FABRIC/PROMETHEUS) van de Hogeschool Rotterdam.
 
   Views since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
   <br>
   Unique visitors since 15 juni 2023: [![HitCount](https://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/robvdw/HR-DATA-FABRIC/Leer-je-eigen-documenten-bevragen-met-generatieve-AI)
 
-*****
-### Dit is een data product gemaakt door <br> het [PROMETHEUS DATA SCIENCE LAB](https://github.com/HR-DATA-FABRIC/PROMETHEUS) <br> van de Hogeschool Rotterdam.
 
-*****
-
-
-
-
-
-
-
+***********
 # intro
 ***********
 ## Waarom is RAG nodig als ik al vragen kan stellen over teksten via Gen-AI? 
