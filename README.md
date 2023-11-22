@@ -78,11 +78,9 @@ from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain.llms import AzureOpenAI
   ````
-
 ##### Referenties
-
-* LangChain Startpagina ====> https://python.langchain.com/docs/get_started/introduction
-* LangChain Azure OpenAI ====> https://python.langchain.com/docs/integrations/llms/azure_openai
+* LangChain Startpagina   ====> https://python.langchain.com/docs/get_started/introduction
+* LangChain Azure OpenAI  ====> https://python.langchain.com/docs/integrations/llms/azure_openai
 
 
 ### Stap 3
@@ -92,11 +90,21 @@ dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen u
 
 
 ````python
-# https://geekflare.com/nl/python-environment-variables/
-# https://github.com/theskumar/python-dotenv
 # de benodigde Azure deployment information is stored in a .env file
+
+'''
+OPENAI_API_TYPE =     "azure"
+OPENAI_API_VERSION =  "xxxxx"
+OPENAI_API_BASE =     "https://taalmodel01.openai.azure.com/"
+OPENAI_API_KEY =      "xxxxxx"
+DEPLOYMENT_NAME =     "xxxxxx"
+'''
+
 import os
 from io import StringIO
 from dotenv import load_dotenv
 load_dotenv(override=True)
   ````
+  ##### Referenties
+  * Wat zijn omgevings variabelen.   ====> https://geekflare.com/nl/python-environment-variables/
+  * Dotenv installeer pagina.         ====> https://github.com/theskumar/python-dotenv
