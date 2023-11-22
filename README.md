@@ -131,9 +131,9 @@ De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF
 # ====> laad een document "sample.pdf' in de variabele "documents"
 # Partitioning Strategy: "fast" or "accurate"
 # Partitioning Mode: "single", "elements", or "paged
-# single all the text from all elements are combined into one (default)
-# elements maintain individual elements
-# paged texts from each page are only combined
+# single ===> all the text from all elements are combined into one (default)
+# elements ===> maintain individual elements
+# paged ===> texts from each page are only combined
 
 
 loader = UnstructuredFileLoader('Sample.pdf', strategy='fast')
