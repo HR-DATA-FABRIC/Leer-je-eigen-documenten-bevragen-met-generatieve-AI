@@ -48,6 +48,18 @@ Deze tekortkomingen kunnen worden tegengegaan door gebruik te maken van Retrieva
 
 RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-component representeert de journalist die relevante informatie verzamelt, en de generator-component is de schrijver die deze informatie gebruikt om een voor mensen begrijpelijke en waardevolle nieuwsverhaal te schrijven.
 
+*******
+
+## Retriever-component: verzamel relevante informatie
+<img align="center" width="1000" height="400" src=".\rag_visual-explaining.png">
+
+## Generator-component: formuleer een voor mensen gebrijpelijk antwoorden
+<img align="center" width="1000" height="400" src=".\rag_retrieval_generation.png">
+
+### Referenties
+* https://python.langchain.com/docs/use_cases/question_answering/
+
+
 
 ***********
 # demo
@@ -120,7 +132,7 @@ load_dotenv(override=True)
   ````
   ##### Referenties
   * Wat zijn omgevings variabelen.   ====> https://geekflare.com/nl/python-environment-variables/
-  * Dotenv installeer pagina.         ====> https://github.com/theskumar/python-dotenv
+  * Dotenv installeer pagina.        ====> https://github.com/theskumar/python-dotenv
 
 ### Stap 4
 
@@ -145,3 +157,14 @@ display(documents)
   ````
 Referenties
 * Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/integrations/document_loaders/unstructured_file
+
+
+### Stap 5
+
+De CharacterTextSplitte functie kan stukken tekst in kleinde sukken verdelen. Er wordt gesplitst per karakter/leesteken  (standaard met: "\n\n") en de lengte van de "chunck"  wordt bepaald op basis van het aantal leestekens (in het Engels: Characters).
+
+
+````python
+  ````
+Referenties
+* Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/character_text_splitter
