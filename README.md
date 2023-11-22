@@ -60,12 +60,19 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 * https://python.langchain.com/docs/use_cases/question_answering/
 
 
+<br>
+<br>
 
 ***********
 # demo
 
-Deze demo is gebasserd op de onderstaande bron:
+Deze demo is gebaseerd op de onderstaande bronnen:
 * https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python
+* https://python.langchain.com/docs/use_cases/question_answering/
+* https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb
+
+<br>
+
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
 
@@ -175,3 +182,37 @@ display(texts)
   ````
 Referenties
 * Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/character_text_splitter
+
+
+### Stap 6
+
+````python
+
+'''
+====> from langchain.embeddings import AzureOpenAIEmbeddings
+====> from langchain.vectorstores import Chroma
+====> from langchain.chains import RetrievalQA
+====> from langchain.llms import AzureOpenAI
+'''
+embeddings = AzureOpenAIEmbeddings(
+    azure_deployment="EMBEDDING",
+    openai_api_version = "2023-09-15-preview",
+)
+
+display(embeddings)
+
+doc_search = Chroma.from_documents(texts,embeddings)
+chain = RetrievalQA.from_chain_type(llm=AzureOpenAI(model_kwargs={'engine':'DAVINCI'}),chain_type='stuff', retriever = doc_search.as_retriever())
+  ````
+
+  ##### Referenties
+
+  * https://python.langchain.com/docs/integrations/text_embedding/azureopenai
+
+  ### Stap 7
+
+  ````python
+  '''   
+  '''
+ ````
+
