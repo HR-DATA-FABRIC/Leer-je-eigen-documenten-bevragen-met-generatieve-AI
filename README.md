@@ -121,3 +121,26 @@ load_dotenv(override=True)
   ##### Referenties
   * Wat zijn omgevings variabelen.   ====> https://geekflare.com/nl/python-environment-variables/
   * Dotenv installeer pagina.         ====> https://github.com/theskumar/python-dotenv
+
+### Stap 4
+
+De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF's, PPT's, afbeeldingen, enz.
+
+````python
+# from langchain.document_loaders import UnstructuredFileLoader
+# ====> laad een document "sample.pdf' in de variabele "documents"
+# Partitioning Strategy: "fast" or "accurate"
+# Partitioning Mode: "single", "elements", or "paged
+# single all the text from all elements are combined into one (default)
+# elements maintain individual elements
+# paged texts from each page are only combined
+
+
+loader = UnstructuredFileLoader('Sample.pdf', strategy='fast')
+documents = loader.load()
+
+# toon de inhoud van het "sample.pdf" document
+display(documents)
+  ````
+Referenties
+* Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/integrations/document_loaders/unstructured_file
