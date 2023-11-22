@@ -127,6 +127,7 @@ load_dotenv(override=True)
 De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF's, PPT's, afbeeldingen, enz.
 
 ````python
+'''
 # from langchain.document_loaders import UnstructuredFileLoader
 # ====> laad een document "sample.pdf' in de variabele "documents"
 # Partitioning Strategy: "fast" or "accurate"
@@ -134,7 +135,7 @@ De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF
 # single ===> all the text from all elements are combined into one (default)
 # elements ===> maintain individual elements
 # paged ===> texts from each page are only combined
-
+'''
 
 loader = UnstructuredFileLoader('Sample.pdf', strategy='fast')
 documents = loader.load()
