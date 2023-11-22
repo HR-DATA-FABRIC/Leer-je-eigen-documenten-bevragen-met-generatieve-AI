@@ -97,7 +97,6 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import AzureOpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
-from langchain.llms import AzureOpenAI
   ````
 ##### Referenties
 * LangChain Startpagina   ====> https://python.langchain.com/docs/get_started/introduction
