@@ -50,13 +50,13 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 
 *******
 
-### Retriever-component: verzamel + embed relevante informatie
+#### Retriever-component: verzamel + embed relevante informatie
 <img align="center" width="1000" height="400" src=".\rag_visual-explaining.png">
 
-### Generator-component: formuleer bruikbare antwoorden
+#### Generator-component: formuleer bruikbare antwoorden
 <img align="center" width="1000" height="400" src=".\rag_retrieval_generation.png">
 
-### Referenties
+#### Referenties
 * https://python.langchain.com/docs/use_cases/question_answering/
 
 
