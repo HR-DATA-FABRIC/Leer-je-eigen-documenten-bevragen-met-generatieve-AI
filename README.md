@@ -166,7 +166,7 @@ Referenties
 * Uitleg langchain.document_loaders. =====> https://python.langchain.com/docs/integrations/document_loaders/unstructured_file
 
 
-### Stap 5
+### Stap 5 (niet nodig voor kleine bestanden)
 
 De CharacterTextSplitte functie kan stukken tekst in kleinde sukken verdelen. Er wordt gesplitst per karakter/leesteken  (standaard met: "\n\n") en de lengte van de "chunck"  wordt bepaald op basis van het aantal leestekens (in het Engels: Characters).
 
@@ -185,6 +185,14 @@ Referenties
 
 
 ### Stap 6
+
+Emmbedding is een techniek om tekstuele data om te zetten in een numerieke representatie. Deze numerieke representatie kan vervolgens worden gebruikt om
+via een OpenAI taal model een vraag te stellen. De onderstaande code toont hoe je een AzureOpenAIEmbeddings object kunt maken zodat je daarna een vraag kunt stellen over het via Langchain ingelezen PDF document.
+
+````python
+'''
+
+en hoe je deze kunt gebruiken om een vraag te stellen over het ingelezen PDF document.
 
 ````python
 
@@ -211,8 +219,11 @@ chain = RetrievalQA.from_chain_type(llm=AzureOpenAI(model_kwargs={'engine':'DAVI
 
   ### Stap 7
 
+  Stel je vraag.
+
+
   ````python
-  '''   
-  '''
+query = 'What is the main topic of the text? Use only one sentence of max 20 words'
+chain.run(query)
  ````
 
