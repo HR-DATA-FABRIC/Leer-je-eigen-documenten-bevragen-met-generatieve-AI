@@ -88,7 +88,7 @@ from langchain.llms import AzureOpenAI
 ### Stap 3
 
 Wanneer je applicatie zijn configuratie ontleent aan omgevingsvariabelen (system variables), 
-dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen uit een .env bestand laadt.
+dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen uit een .env bestand kunt uitlezen.
 
 
 ````python
