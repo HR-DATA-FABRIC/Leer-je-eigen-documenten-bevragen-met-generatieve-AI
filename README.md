@@ -48,10 +48,12 @@ Deze tekortkomingen kunnen worden tegengegaan door gebruik te maken van Retrieva
 
 RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-component representeert de journalist die relevante informatie verzamelt, en de generator-component is de schrijver die deze informatie gebruikt om een voor mensen begrijpelijke en waardevolle nieuwsverhaal te schrijven.
 
+
 ***********
-
-
 # demo
+
+Deze demo is gebasserd op de onderstaande bron:
+* https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
 
@@ -91,16 +93,23 @@ dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen u
 
 ````python
 # de benodigde Azure deployment information is stored in a .env file
-# in de zelfde directory as dit notebook
-
+# in de zelfde directory als  het notebook
 
 # omgevings variabelen geschikt in combionatie met OpenAI 0.28.1 package 
 '''
+# Set this to `azure`
 OPENAI_API_TYPE =     "azure"
+
+# The API version you want to use: set this to `2023-05-15` for the released version.
 OPENAI_API_VERSION =  "xxxxxx"
+
+# The base URL for your Azure OpenAI resource.  You can find this in the Azure portal under your Azure OpenAI resource.
 OPENAI_API_BASE =     "https://xxxxxx.openai.azure.com/"
+
+# The API key for your Azure OpenAI resource.  Select one of the deployments from the deployment history.
 OPENAI_API_KEY =      "xxxxxx"
-DEPLOYMENT_NAME =     "xxxxxx"
+
+# The name of your Azure OpenAI deployment.  You can find this in the Azure portal under your Azure OpenAI resource.
 DEPLOYMENT_NAME =     "xxxxxx"
 '''
 
