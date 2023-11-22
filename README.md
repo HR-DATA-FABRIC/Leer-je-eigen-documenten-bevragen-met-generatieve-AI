@@ -31,7 +31,7 @@ Dit is een data product gemaakt door het [PROMETHEUS DATA SCIENCE LAB](https://g
 
 
 ***********
-# intro
+# Context
 ***********
 ## Waarom is RAG nodig als ik al vragen kan stellen over teksten via Gen-AI? 
 
@@ -53,7 +53,15 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 
 # demo
 ***********
-## RAG implementatie met Azure + LangChain + OpenAI
+## Python RAG implementatie met Azure + LangChain + OpenAI
+
+#### Packadge Installatie via Jupyter NoteBook
+
+````Python
+# Install a pip package in the current Jupyter kernel
+import sys
+!{sys.executable} -m pip install dotenv langchain unstructured[pdf] openai chromadb
+  ````
 
 #### Importeer de benodigde Python modules
 ````python
@@ -66,3 +74,4 @@ from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain.llms import AzureOpenAI
   ````
+
