@@ -55,6 +55,8 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
 
+### Stap 1 
+
 #### Python Package Installatie via Jupyter NoteBook use Colab or Anaconda
 
 ````Python
@@ -62,6 +64,8 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 import sys
 !{sys.executable} -m pip install python-dotenv langchain unstructured[pdf] openai==0.28.1 chromadb tiktoken
   ````
+
+### Stap 2
 
 #### Importeer de benodigde LangChain modules
 ````python
@@ -75,3 +79,24 @@ from langchain.chains import RetrievalQA
 from langchain.llms import AzureOpenAI
   ````
 
+##### Referenties
+
+* LangChain Startpagina ====> https://python.langchain.com/docs/get_started/introduction
+* LangChain Azure OpenAI ====> https://python.langchain.com/docs/integrations/llms/azure_openai
+
+
+### Stap 3
+
+Wanneer je applicatie zijn configuratie ontleent aan omgevingsvariabelen (system variables), 
+dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen uit een .env bestand laadt.
+
+
+````python
+# https://geekflare.com/nl/python-environment-variables/
+# https://github.com/theskumar/python-dotenv
+# de benodigde Azure deployment information is stored in a .env file
+import os
+from io import StringIO
+from dotenv import load_dotenv
+load_dotenv(override=True)
+  ````
