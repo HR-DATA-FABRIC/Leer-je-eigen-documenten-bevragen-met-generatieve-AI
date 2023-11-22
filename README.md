@@ -53,17 +53,17 @@ RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-compon
 
 # demo
 ***********
-## Python RAG implementatie met Azure + LangChain + OpenAI
+## RAG implementatie met Azure + LangChain + OpenAI
 
-#### Packadge Installatie via Jupyter NoteBook
+#### Python Package Installatie via Jupyter NoteBook use Colab or Anaconda
 
 ````Python
-# Install a pip package in the current Jupyter kernel
+# Installeer de benodigde packages via Jupyter Notebook
 import sys
-!{sys.executable} -m pip install dotenv langchain unstructured[pdf] openai chromadb
+!{sys.executable} -m pip install python-dotenv langchain unstructured[pdf] openai==0.28.1 chromadb tiktoken
   ````
 
-#### Importeer de benodigde Python modules
+#### Importeer de benodigde LangChain modules
 ````python
 from dotenv import load_dotenv
 from langchain.llms import AzureOpenAI
