@@ -207,7 +207,6 @@ embeddings = AzureOpenAIEmbeddings(
 )
 
 display(embeddings)
-
 doc_search = Chroma.from_documents(texts,embeddings)
 chain = RetrievalQA.from_chain_type(llm=AzureOpenAI(model_kwargs={'engine':'DAVINCI'}),chain_type='stuff', retriever = doc_search.as_retriever())
   ````
