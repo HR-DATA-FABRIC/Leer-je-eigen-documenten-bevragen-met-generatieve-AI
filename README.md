@@ -131,7 +131,7 @@ OPENAI_API_VERSION =  "xxxxxx"
 OPENAI_API_BASE =     "https://xxxxxx.openai.azure.com/"
 
 # The API key for your Azure OpenAI resource.  Select one of the deployments from the deployment history.
-OPENAI_API_KEY =      "xxxxxx"
+AZURE_OPENAI_API_KEY =      "xxxxxx"
 
 # The name of your Azure OpenAI deployment.  You can find this in the Azure portal under your Azure OpenAI resource.
 DEPLOYMENT_NAME =     "xxxxxx"
@@ -139,7 +139,7 @@ DEPLOYMENT_NAME =     "xxxxxx"
 ===>
 N.B.  To make embedding work with OPENAI via Azure:
 "engine" should be set to the deployment name 
-you chose when you deployed the text-embedding-ada-002 (Version 2) model
+you chose when you deployed the <text-embedding-ada-002 (Version 2)> model
 <===
 '''
 
