@@ -110,7 +110,9 @@ Dit kan op verschillende manieren worden gedaan. Een veilige manier is om de ben
 Dit voorkomt dat de gegevens per ongeluk worden gedeeld via code die is gedeeld via GitHub of Google Colab.
 Het .env bestand moet dan in de zelfde directory staan als het notebook. 
 
-
+Voor het aanmaken van azure api keys en deployment namen 
+raadpleeg de volgende Github Repository:<br> https://github.com/HR-ChatGPT/ChatGPT-UITGELEGD/tree/main/WORKSHOPS/AZURE.
+<br>
 
 ````python
 # de benodigde Azure deployment information is stored in a .env file
