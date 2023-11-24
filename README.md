@@ -115,11 +115,12 @@ raadpleeg de volgende Github Repository:<br> https://github.com/HR-ChatGPT/ChatG
 <br>
 
 ````python
-# de benodigde Azure deployment information is stored in a .env file
+'''
+# de benodigde Azure deployment information moet zijn opgelagen in een .env file
 # in de zelfde directory als  het notebook
 
 # omgevings variabelen geschikt in combionatie met OpenAI 0.28.1 package 
-'''
+
 # Set this to `azure`
 OPENAI_API_TYPE =     "azure"
 
