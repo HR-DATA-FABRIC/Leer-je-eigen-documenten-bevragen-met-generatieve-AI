@@ -14,9 +14,9 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 |-----|
 | 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
 | 2. Veligiheidsmaatregelen nemen 
-| 3. LanChain installeren en configureren
-| 4. Azure OpenAI API key aanvragen
-| 5. Jupyter Notebook installeren
+| 3. LangChain leren gebruiken voor RAG implementatie
+| 4. Azure OpenAI API key aanvragen + OpenAI deployment aanmaken
+| 5. Jupyter Notebook aanmaken in CoLab of Anaconda
 | 6. DEMO [[DEMO]](#demo).
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
