@@ -73,9 +73,12 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
 
+Onderstaande stappen beschrijven hoe je een RAG implementatie kunt realiseren met behulp van Azure + LangChain + OpenAI in een Jupyter Notebook.
+Deze stappen zijn getest in een standaard Google Colab Notebook.
+
 ### Stap 1 
 
-#### Python Package Installatie via Jupyter NoteBook use Colab or Anaconda
+#### Python Package Installatie via Jupyter NoteBook
 
 ````Python
 # Installeer de benodigde packages via Jupyter Notebook
@@ -85,7 +88,7 @@ import sys
 
 ### Stap 2
 
-#### Importeer de benodigde LangChain modules
+#### Importeer de benodigde LangChain Python modules
 ````python
 from dotenv import load_dotenv
 from langchain.llms import AzureOpenAI
@@ -102,8 +105,11 @@ from langchain.chains import RetrievalQA
 
 ### Stap 3
 
-Wanneer je applicatie zijn configuratie ontleent aan omgevingsvariabelen (system variables), 
-dan kun je dotenv aan je applicatie toevoegen zodat het de benodigde variablen uit een .env bestand kunt uitlezen.
+Om toegang te krijgen to OpenAI via Azure moeten  er gegevens zoals azure-api-key + de deployment naam beschikbaar zijn als systeem variabelen. 
+Dit kan op verschillende manieren worden gedaan. Een veilige manier is om de benodigde variabelen in een .env bestand te zetten. 
+Dit voorkomt dat de gegevens per ongeluk worden gedeeld via code die is gedeeld via GitHub of Google Colab.
+Het .env bestand moet dan in de zelfde directory staan als het notebook. 
+
 
 
 ````python
@@ -126,6 +132,12 @@ OPENAI_API_KEY =      "xxxxxx"
 
 # The name of your Azure OpenAI deployment.  You can find this in the Azure portal under your Azure OpenAI resource.
 DEPLOYMENT_NAME =     "xxxxxx"
+
+===>
+N.B.  To make embedding work with OPENAI via Azure:
+"engine" should be set to the deployment name 
+you chose when you deployed the text-embedding-ada-002 (Version 2) model
+<===
 '''
 
 import os
