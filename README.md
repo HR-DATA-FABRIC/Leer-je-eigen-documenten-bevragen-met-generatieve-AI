@@ -14,8 +14,8 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 |-----|
 | 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
 | 2. Veligiheidsmaatregelen nemen 
-| 3. LangChain leren gebruiken voor RAG implementatie
-| 4. Azure OpenAI API key aanvragen + OpenAI deployment aanmaken
+| 3. LangChain leren gebruiken voor RAG implementatie met 
+| 4. Azure OpenAI API key + deployment aanmaken voor model: "text-embedding-ada-002"
 | 5. Jupyter Notebook aanmaken in CoLab of Anaconda
 | 6. DEMO [[DEMO]](#demo).
 
@@ -31,47 +31,44 @@ Dit is een data product gemaakt door het [PROMETHEUS DATA SCIENCE LAB](https://g
 
 
 ***********
-# Context
+# Context & waarde voor het hoger onderwijs
 ***********
 ## Waarom is RAG nodig als ik al vragen kan stellen over teksten via Gen-AI? 
 
-Gen-AI applicaties gebaseerd op grote taalmodellen (LLMs) verwijzen naar elke vorm van machinaal-lerende (ML) kunstmatige intelligentie (AI) die gebruikt maakt van natuurlijke taal verwerkende (NLP) algoritmen. 
+Gen-AI applicaties gebaseerd op grote taalmodellen (LLMs) is elke vorm van machinaal-lerende (ML) kunstmatige intelligentie (AI) die gebruikt maakt van natuurlijke taal verwerkende (NLP) algoritmen. 
 
-Eindgebruikers  kunnen  online gebruik  maken deze conversationele agenten (Chatbots zoals Bard, Co-Pilot, en ChatGPT) via webbrowser userinterfaces.  Hierdoor is het mogelijk om via zelf-geschreven, textuele instructies (zogenaamde prompts), content te genereren, in de vorm van tekst, broncode, afbeeldingen, video's, muziek etc.
+Eindgebruikers  kunnen  online gebruik  maken deze conversationele agenten (Chatbots zoals Bard, Co-Pilot, en ChatGPT) via webbrowser userinterfaces.  Hierdoor is het mogelijk om via een toetsenbord ingevoerde instructies (zogenaamde prompts), content te genereren, in de vorm van tekst, broncode, afbeeldingen, video's, muziek etc.
 
-LLMs worden tijdens hun trainingfase gevoed met publiekelijk beschikbare content, in de vorm van boeken, video's, audio opnames, databases, artikelen, websites, en open source-broncode. Zo leren LLMs output te creëren die sterk lijkt op door mensen gemaakte, authentieke content. Op het moment dat eindgebruikers gebruik maken van op LLM-gebaseerde gen-AI userinterfaces dan is het onderliggende taal model bevroren en kan niet meer worden getraind.  De Engelse term “pre-trained” wordt veelal gebruikt om dit aan te geven. Het onderliggende taalmodel van de ChatGPT interface is GPT-4 hetgeen staat voor: 4de generatie “Generative Pre-trained Transformer”.
+LLMs worden tijdens hun trainingfase gevoed met publiekelijk beschikbare content, in de vorm van boeken, video's, audio opnames, databases, artikelen, websites, en open source-broncode. Zo leren LLMs output te creëren die sterk lijkt op door mensen gemaakte, authentieke content. Op het moment dat eindgebruikers een vraag stelt in de vorm van een prompt dan is het onderliggende taal model bevroren en kan niet meer worden getraind.  De Engelse term “pre-trained” wordt veelal gebruikt om dit aan te geven. Het onderliggende taalmodel van de ChatGPT interface is GPT-4 hetgeen staat voor: 4de generatie “Generative Pre-trained Transformer”.
 
-Een groot nadeel van de huidige generatie LLMs is dat ze feitelijk functioneren als algemene (lees general-purpose) kennisbanken, waarvan de hoeveelheid beschikbare gegevens niet uitbreidbaar (lees, bevroren) en niet op één enkele locatie in het model is opgeslagen, maar over verschillende locaties is verspreid (lees, gedistribueerd).
-Met andere woorden, de in LLMs opgeslagen kennis is voor eindgebruikers zowel onveranderbaar als ook  onherkenbaar waardoor taalmodellen niet eenvoudig doelgericht zijn te bevragen over een specifiek en actueel kennisdomein. Het is dus  niet mogelijk om te bepalen welke informatie het LLM  benut om antwoorden te genereren, waardoor waarheidsvinding (fact-checking) moeilijk uitvoerbaar is.
+Een groot nadeel van de huidige generatie LLMs is dat ze feitelijk functioneren als algemene (lees general-purpose) kennisbanken, waarvan de hoeveelheid beschikbare gegevens niet uitbreidbaar (lees, bevroren) en niet op één enkele locatie in het model is opgeslagen, maar over verschillende locaties is verspreid (lees, gedistribueerd). Dus, de in LLMs opgeslagen kennis is voor eindgebruikers zowel onveranderbaar als ook  onherkenbaar waardoor taalmodellen niet eenvoudig doelgericht zijn te bevragen over een specifiek en actueel kennisdomein. Het is dan ook niet mogelijk om te bepalen welke informatie het LLM  benut om antwoorden te genereren, waardoor waarheidsvinding (fact-checking) moeilijk uitvoerbaar is.
 
-Deze tekortkomingen kunnen worden tegengegaan door gebruik te maken van Retrieval-Augmented Generation (RAG). Deze op natuurlijke taal generatie (NLP) gebaseerde AI-technologie kun je opvatten als een onderzoeks- en schrijversduo. Stel je voor dat je een journalist bent die verslag doet van  een natuurramp. Je doet dan eerst onderzoek naar de gebeurtenis, verzamelt relevante artikelen of weer rapporten en gebruikt deze informatie om dit specifieke nieuwsverhaal te schrijven.
+Deze tekortkomingen kunnen worden gecompenseerd door ["Retrieval-Augmented Generation"](https://doi.org/10.48550/arXiv.2005.11401) (RAG). Deze op natuurlijke taal generatie (NLP) gebaseerde AI-technologie kan externe digitale-bronnen (zoals API's, Websites, SQL-databases, PDF en Excel  files) koppelen aan LLMs. Hierdoor wordt de informatie die is opgeslagen in de externe bron direct opvraagbaar via prompts. De werking van RAG is op te vatten als de combinatie van een kundige schrijver (het LLM) die alle externe informatie kan uitleggen die hem door de bibliothecaris (de database) is verstrekt. 
 
-RAG doet iets soortgelijks maar dan voor grote-taalmodellen. De retriever-component representeert de journalist die relevante informatie verzamelt, en de generator-component is de schrijver die deze informatie gebruikt om een voor mensen begrijpelijke en waardevolle nieuwsverhaal te schrijven.
+De combinatie van een LLM met een externe database is een vorm van “hybride AI” waarbij de gegevens van een LLM worden gecombineerd met de kennis van een database. RAG vergroot dus de zeer brede kennisbasis van een LLM met betrouwbare en zeer specifieke informatie. 
 
-*******
+Een voor de hand liggende toepassing is dan ook het bevraagbaar maken van intranet websites, databases, en handleidingen. Hierdoor kunnen eindgebruikers via een webbrowser interface, in de vorm van een chatbot, vragen stellen over de inhoud van deze digitale bronnen.
+In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over het LMS (Learning Management System) zoals Canvas, Brightspace, Blackboard, enz. Verder kan RAG worden ingezet om patronen te ontdekken in de antwoorden die studenten geven op open vragen in toetsen. Hierdoor kan de kwaliteit van de toetsvragen worden verbeterd. Ook kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over de digitale bibliotheek, de digitale leeromgeving, enz.
 
-#### Retriever-component: verzamel + embed relevante informatie
-<img align="center" width="1000" height="400" src=".\rag_visual-explaining.png">
 
-#### Generator-component: formuleer bruikbare antwoorden
+### Retrieval versus Generatie https://python.langchain.com/docs/use_cases/question_answering/
 <img align="center" width="1000" height="400" src=".\rag_retrieval_generation.png">
 
-#### Referenties
-* https://python.langchain.com/docs/use_cases/question_answering/
-
-
-<br>
-<br>
-
-***********
-# demo
-
-Deze demo is gebaseerd op de onderstaande bronnen:
+### Geraadplegde bronnen:
 * https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python
 * https://python.langchain.com/docs/use_cases/question_answering/
 * https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb
+*******
+
+<!--
+#### Retriever-component: verzamel + embed relevante informatie
+<img align="center" width="1000" height="400" src=".\rag_visual-explaining.png">
+-->
+
+
 
 <br>
+
 
 ***********
 ## RAG implementatie met Azure + LangChain + OpenAI
@@ -226,3 +223,12 @@ query = 'What is the main topic of the text? Use only one sentence of max 20 wor
 chain.run(query)
  ````
 
+
+ <br>
+
+***********
+# demo
+
+
+
+<br>
