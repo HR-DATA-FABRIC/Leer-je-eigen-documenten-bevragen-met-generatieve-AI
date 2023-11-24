@@ -105,9 +105,9 @@ from langchain.chains import RetrievalQA
 
 ### Stap 3
 
-Om toegang te krijgen to OpenAI via Azure moeten  er gegevens zoals azure-api-key + de deployment naam beschikbaar zijn als systeem variabelen. 
+Om toegang te krijgen tot OpenAI via Azure moeten  er gegevens zoals azure-api-key + de deployment naam beschikbaar zijn als systeem variabelen. 
 Dit kan op verschillende manieren worden gedaan. Een veilige manier is om de benodigde variabelen in een .env bestand te zetten. 
-Dit voorkomt dat de gegevens per ongeluk worden gedeeld via code die is gedeeld via GitHub of Google Colab.
+Dit voorkomt dat de gegevens per ongeluk worden gedeeld via code die is gepubliceerd via GitHub of Google Colab.
 Het .env bestand moet dan in de zelfde directory staan als het notebook. 
 
 Voor het aanmaken van azure api keys en deployment namen 
