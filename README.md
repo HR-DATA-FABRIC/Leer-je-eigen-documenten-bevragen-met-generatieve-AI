@@ -98,7 +98,7 @@ from langchain.embeddings import AzureOpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
   ````
-##### Referenties
+#### Referenties
 * LangChain Startpagina   ====> https://python.langchain.com/docs/get_started/introduction
 * LangChain Azure OpenAI  ====> https://python.langchain.com/docs/integrations/llms/azure_openai
 
@@ -148,13 +148,50 @@ from io import StringIO
 from dotenv import load_dotenv
 load_dotenv(override=True)
   ````
-  ##### Referenties
+
+Een voorbeeld van een werkende embeding configuratie in Azure met OpenAI 0.28.1 package is:
+```yaml
+https://taalmodel01.openai.azure.com//openai/deployments?api-version=2022-12-01
+{
+  "data": [
+    {
+      "scale_settings": {
+        "scale_type": "standard"
+      },
+      "model": "gpt-35-turbo",
+      "owner": "organization-owner",
+      "id": "DAVINCI",  // <=== engine: deployment Name
+      "status": "succeeded",
+      "created_at": 1699185501,
+      "updated_at": 1699185501,
+      "object": "deployment"
+    },
+    {
+      "scale_settings": {
+        "scale_type": "standard"
+      },
+      "model": "text-embedding-ada-002",
+      "owner": "organization-owner",
+      "id": "EMBEDDING", ,  // <=== engine: deployment Name
+      "status": "succeeded",
+      "created_at": 1700045037,
+      "updated_at": 1700045215,
+      "object": "deployment"
+    }
+  ],
+  "object": "list"
+}
+```
+
+#### Referenties
   * Wat zijn omgevings variabelen.   ====> https://geekflare.com/nl/python-environment-variables/
   * Dotenv installeer pagina.        ====> https://github.com/theskumar/python-dotenv
 
 ### Stap 4
 
 De UnstructuredFileLoader ondersteunt het laden van vele bestandstypes zoals PDF's, PPT's, afbeeldingen, enz.
+In het onderstaande voorbeeld wordt een PDF bestand genaamd "Sample.pdf" geladen in de variabele "documents".
+Dit bestand moet in dezelfde directory staan als het notebook.
 
 ````python
 '''
@@ -198,15 +235,10 @@ Referenties
 ### Stap 6
 
 Emmbedding is een techniek om tekstuele data om te zetten in een numerieke representatie. Deze numerieke representatie kan vervolgens worden gebruikt om
-via een OpenAI taal model een vraag te stellen. De onderstaande code toont hoe je een AzureOpenAIEmbeddings object kunt maken zodat je daarna een vraag kunt stellen over het via Langchain ingelezen PDF document.
+via een OpenAI taal model zoals gpt-35-turbo een vraag te stellen. De onderstaande code toont hoe je een AzureOpenAIEmbeddings object kunt maken zodat je daarna een vraag kunt stellen over het via Langchain ingelezen PDF document.
 
-````python
-'''
 
-en hoe je deze kunt gebruiken om een vraag te stellen over het ingelezen PDF document.
-
-````python
-
+```python
 '''
 ====> from langchain.embeddings import AzureOpenAIEmbeddings
 ====> from langchain.vectorstores import Chroma
@@ -214,15 +246,18 @@ en hoe je deze kunt gebruiken om een vraag te stellen over het ingelezen PDF doc
 ====> from langchain.llms import AzureOpenAI
 '''
 embeddings = AzureOpenAIEmbeddings(
-    azure_deployment="EMBEDDING",
+    azure_deployment="EMBEDDING",  #<==== set to the deployment name with  "text-embedding-ada-002 (Version 2)"  model
     openai_api_version = "2023-09-15-preview",
 )
 
 display(embeddings)
 doc_search = Chroma.from_documents(texts,embeddings)
-chain = RetrievalQA.from_chain_type(llm=AzureOpenAI(model_kwargs={'engine':'DAVINCI'}),
+
+# ===> engine: deployment Name with "gpt-35-turbo" model <===
+
+chain = RetrievalQA.from_chain_type(llm=AzureOpenAI(model_kwargs={'engine':'DAVINCI'}), 
 chain_type='stuff', retriever = doc_search.as_retriever())
-  ````
+```
 
   ##### Referenties
 
@@ -244,6 +279,12 @@ chain.run(query)
 ***********
 # demo
 
+Een voorbeeld van een werkende RAG implementatie met Azure + LangChain + OpenAI is te in te zien <br> via de volgende:
+[Google Colab Notebook:](https://colab.research.google.com/drive/1bNbHBXzP1tnDU-xNDRLLeCLFkK3XnI7K#scrollTo=mcw9fPYBOh7b)
+genaamd : LangChain-GPT35_v01.ipynb
+<br>
+<br>
 
+<img align="center" width="1000" height="400" src=".\screenshot_colab.png">
 
 <br>
