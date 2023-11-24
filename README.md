@@ -55,9 +55,9 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 <img align="center" width="1000" height="400" src=".\rag_retrieval_generation.png">
 
 ### Geraadplegde bronnen:
-* https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python
-* https://python.langchain.com/docs/use_cases/question_answering/
-* https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb
+* [Quickstart: Chat with Azure OpenAI models using your own data](https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python)
+* [LangChain: What is RAG?](https://python.langchain.com/docs/use_cases/question_answering/)
+* [RAG topassen via Google Colab](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb)
 *******
 
 <!--
