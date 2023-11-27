@@ -20,18 +20,19 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 | 6. DEMO [[DEMO]](#demo).
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
-
+<!--
 ## Sammentvatting
 
 Deze Repository legt uit wat RAG is en hoe je het kunt toepasssen m.b.v. Azure + LangChain + OpenAI in een Python Jupyter Notebook.
 Beschreven wordt een RAG-pijplijn (geschreven in Python broncode) die de volgende stappen demonstreert:
 
 (1) Een .env file aanmaken die de benodigde informatie bevat om gebruik te kunnen maken van Azure OpenAI resources/modellen. <br>
-(2) Python packages installeert en de benodigde LangChain modules importeert. <br>
+(2) Python packages installeren + de benodigde LangChain modules importeren. <br>
 (3) PDF document digitaal inlezen en opdelen in kleine stukken tekst. <br>
-(4) omzetten van tekstuele data omzet in een numerieke representatie (embedding). <br>
+(4) Omzetten van tekstuele data omzet in een numerieke representatie (embedding) m.b.v. ChrmamDB vector database. <br>
 (5) Een vraag stellen aan een Azure OpenAI taalmodel (GPT-4) en de antwoorden opslaat in een database.<br>
 (6) Antwoorden uit de database teruggeven aan de gebruiker. <br>
+-->
 
 
 
