@@ -48,7 +48,7 @@ Deze tekortkomingen kunnen worden gecompenseerd door ["Retrieval-Augmented Gener
 De combinatie van een LLM met een externe database is een vorm van “hybride AI” waarbij de gegevens van een LLM worden gecombineerd met de kennis van een database. RAG vergroot dus de zeer brede kennisbasis van een LLM met betrouwbare en zeer specifieke informatie. Dus met RAG is het mogelijk om een "fact-checking" component toe te voegen aan een LLM.
 
 Een voor de hand liggende toepassing is dan ook het bevraagbaar maken van intranet websites, databases, en handleidingen. Hierdoor kunnen eindgebruikers via een webbrowser interface, in de vorm van een chatbot, vragen stellen over de inhoud van deze digitale bronnen.
-In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over het LMS (Learning Management System) zoals Canvas, Brightspace, Blackboard, enz. Verder kan RAG worden ingezet om patronen te ontdekken in de antwoorden die studenten geven op open vragen in toetsen. Hierdoor kan de kwaliteit van de toetsvragen worden verbeterd. Ook kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over de digitale bibliotheek, de digitale leeromgeving, enz.
+In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over het LMS (Learning Management System) zoals Canvas, Brightspace, Blackboard, enz. Verder kan RAG worden ingezet om patronen te ontdekken in de antwoorden die studenten geven op open vragen in toetsen. Hierdoor kan de kwaliteit van de toetsvragen worden verbeterd. Ook kan RAG worden benut om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over de digitale bibliotheek, de digitale leeromgeving, enz.
 
 
 ### Retrieval versus Generatie https://python.langchain.com/docs/use_cases/question_answering/
@@ -60,6 +60,18 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 * [RAG topassen via Google Colab](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb)
 * [Retrieval Augmented Generation using Azure Machine Learning prompt flow (preview)](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2#why-use-rag)
 *******
+
+
+***********
+# Veiligheids-issues bij het gebruik van RAG <br>(deze sectie is nog in ontwikkeling)
+***********
+## Wanneer is RAG veilig te gebruiken?
+
+Met de lancering van GPT-4 Turbo en de Retrieval API heeft OpenAI geprobeerd het hallucinatieprobleem op te lossen. Met de lange contextlengte en de optie voor bedrijven om nieuwe gegevens te integreren voor informatie, heeft OpenAI bijna het belangrijkste probleem van LLM's gekraakt en opgelost, maar de gegevensprivacy van gebruikers vergeten.
+
+Zo kon een gebruiker op X met een beetje betere prompt engineering de originele kennisbestanden downloaden van de GPT's van iemand anders, een app die was gebouwd met de onlangs uitgebrachte GPT Builder, precies met RAG. Dit is een groot beveiligingsprobleem voor dit model.
+###  Geraadpleegde bronnen:
+* https://analyticsindiamag.com/when-and-when-not-to-rag/
 
 <!--
 #### Retriever-component: verzamel + embed relevante informatie
