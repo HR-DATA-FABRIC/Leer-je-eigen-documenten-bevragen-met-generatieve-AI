@@ -21,6 +21,20 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
 
+## Sammentvatting
+
+Deze Repository legt uit wat RAG is en hoe je het kunt toepasssen m.b.v. Azure + LangChain + OpenAI in een Python Jupyter Notebook.
+Beschreven wordt een RAG-pijplijn (geschreven in Python broncode) die de volgende stappen demonstreert:
+
+(1) Een .env file aanmaken die de benodigde informatie bevat om gebruik te kunnen maken van Azure OpenAI resources/modellen. <br>
+(2) Python packages installeert en de benodigde LangChain modules importeert. <br>
+(3) PDF document digitaal inlezen en opdelen in kleine stukken tekst. <br>
+(4) omzetten van tekstuele data omzet in een numerieke representatie (embedding). <br>
+(5) Een vraag stellen aan een Azure OpenAI taalmodel (GPT-4) en de antwoorden opslaat in een database.<br>
+(6) Antwoorden uit de database teruggeven aan de gebruiker. <br>
+
+
+
 >Disclaimer: deze tekst is door het gebruik van *"gezond verstand'* tot stand gekomen. <br> Artificiële intelligentie [AI] is gebruikt ter verificatie van de gebruikte bronnen + vertaling van Engelstalige teksten.
 
 Dit is een data product gemaakt door het [PROMETHEUS DATA SCIENCE LAB](https://github.com/HR-DATA-FABRIC/PROMETHEUS) van de Hogeschool Rotterdam.
@@ -61,6 +75,7 @@ source: https://towardsdatascience.com/retrieval-augmented-generation-rag-from-t
 * [LangChain: What is RAG?](https://python.langchain.com/docs/use_cases/question_answering/)
 * [RAG topassen via Google Colab](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb)
 * [Retrieval Augmented Generation using Azure Machine Learning prompt flow (preview)](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2#why-use-rag)
+* [Compare PDF Question Answering Systems Build with OpenAI and Google VertexAI](https://medium.com/@kelvin.lu.au/compare-pdf-question-answering-with-openai-and-google-vertexai-46638d62327b)
 *******
 
 
@@ -74,6 +89,7 @@ Met de lancering van GPT-4 Turbo en de Retrieval API heeft OpenAI geprobeerd het
 Zo kon een gebruiker op X met een beetje betere prompt engineering de originele kennisbestanden downloaden van de GPT's van iemand anders, een app die was gebouwd met de onlangs uitgebrachte GPT Builder, precies met RAG. Dit is een groot beveiligingsprobleem voor dit model.
 ###  Geraadpleegde bronnen:
 * https://analyticsindiamag.com/when-and-when-not-to-rag/
+* https://medium.com/@kelvin.lu.au/disadvantages-of-rag-5024692f2c53
 
 <!--
 #### Retriever-component: verzamel + embed relevante informatie
