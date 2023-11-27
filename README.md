@@ -51,8 +51,10 @@ Een voor de hand liggende toepassing is dan ook het bevraagbaar maken van intran
 In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over het LMS (Learning Management System) zoals Canvas, Brightspace, Blackboard, enz. Verder kan RAG worden ingezet om patronen te ontdekken in de antwoorden die studenten geven op open vragen in toetsen. Hierdoor kan de kwaliteit van de toetsvragen worden verbeterd. Ook kan RAG worden benut om studenten te helpen bij het vinden van informatie in de vorm van antwoorden op vragen over de digitale bibliotheek, de digitale leeromgeving, enz.
 
 
-### Retrieval versus Generatie https://python.langchain.com/docs/use_cases/question_answering/
-<img align="center" width="1000" height="400" src=".\rag_retrieval_generation.png">
+### Retrieval-Augmented Generation Workflow:
+<img align="center" width="1000" height="400" src=".\rag_towardsdatascience.com.png">
+source: https://towardsdatascience.com/retrieval-augmented-generation-rag-from-theory-to-langchain-implementation-4e9bd5f6a4f2
+
 
 ### Geraadplegde bronnen:
 * [Quickstart: Chat with Azure OpenAI models using your own data](https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python)
