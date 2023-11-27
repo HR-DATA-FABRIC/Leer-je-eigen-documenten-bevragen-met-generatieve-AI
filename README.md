@@ -117,10 +117,10 @@ raadpleeg de volgende Github Repository:<br> https://github.com/HR-ChatGPT/ChatG
 
 ````python
 '''
-# de benodigde Azure deployment information moet zijn opgelagen in een .env file
+# de benodigde Azure deployment information moet zijn opgeslagen in een .env file
 # in de zelfde directory als  het notebook
 
-# omgevings variabelen geschikt in combionatie met OpenAI 0.28.1 package 
+# omgevingsvariabelen geschikt in combionatie met OpenAI 0.28.1 package 
 
 # Set this to `azure`
 OPENAI_API_TYPE =     "azure"
@@ -217,7 +217,7 @@ Referenties
 
 ### Stap 5 (niet nodig voor kleine bestanden)
 
-De CharacterTextSplitte functie kan stukken tekst in kleinde sukken verdelen. Er wordt gesplitst per karakter/leesteken  (standaard met: "\n\n") en de lengte van de "chunck"  wordt bepaald op basis van het aantal leestekens (in het Engels: Characters).
+De CharacterTextSplitte functie kan stukken tekst in kleine stukken verdelen. Er wordt gesplitst per karakter/leesteken  (standaard met: "\n\n") en de lengte van de "chunck"  wordt bepaald op basis van het aantal leestekens (in het Engels: Characters).
 
 
 ````python
