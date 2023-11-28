@@ -20,8 +20,13 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 | 6. DEMO [[DEMO]](#demo).
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
+Deze Repository is bedoeld voor studenten en docenten van het hoger onderwijs die willen leren hoe ze RAG kunnen implementeren met behulp van Azure + LangChain + OpenAI in een Python Jupyter Notebook.
+
+Deze Repository is onderdeel van de [HR-DATA-FABRIC](https://github.com/HR-DATA-FABRIC) van de Hogeschool Rotterdam.<br>
+De benodigde meta data nodig om met Azure OpenAI te kunnen werken staat beschreven <br> op de Azure Quickstart pagina van Learn Microsoft: [Quickstart: Ge started Using GPT-35-Turbo and GPT-4 with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line%2Cpython&pivots=programming-language-python)
+
 <!--
-## Sammentvatting
+## Samentvatting
 
 Deze Repository legt uit wat RAG is en hoe je het kunt toepasssen m.b.v. Azure + LangChain + OpenAI in een Python Jupyter Notebook.
 Beschreven wordt een RAG-pijplijn (geschreven in Python broncode) die de volgende stappen demonstreert:
