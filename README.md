@@ -189,7 +189,7 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
   ````
 
-Een voorbeeld van een werkende embeding configuratie in Azure met OpenAI 0.28.1 package is:
+Een voorbeeld van een werkende embeding configuratie in Azure met OpenAI 0.28.1 package
 ```yaml
 https://taalmodel01.openai.azure.com//openai/deployments?api-version=2022-12-01
 {
