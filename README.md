@@ -91,6 +91,7 @@ Zo kon een gebruiker op X met een beetje betere prompt engineering de originele 
 ###  Geraadpleegde bronnen:
 * https://analyticsindiamag.com/when-and-when-not-to-rag/
 * https://medium.com/@kelvin.lu.au/disadvantages-of-rag-5024692f2c53
+* https://github.com/Azure-Samples/azure-openai-rag-workshop/security
 
 <!--
 #### Retriever-component: verzamel + embed relevante informatie
