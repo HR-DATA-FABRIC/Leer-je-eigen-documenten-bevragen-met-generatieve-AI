@@ -15,7 +15,8 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 | 1. Begrijpen wat RAG wel en niet kan [[Wat is RAG]](#intro) 
 | 2. Veligiheidsmaatregelen nemen 
 | 3. LangChain leren gebruiken voor RAG implementatie met 
-| 4. [Azure OpenAI API key + deployment aanmaken voor model: "text-embedding-ada-002"](https://github.com/HR-ChatGPT/ChatGPT-UITGELEGD/tree/main/WORKSHOPS/AZURE)
+| 4a. [Azure Resource aamaken nodig voor deployment van een LLM zoals GPT](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
+| 4b. [Azure OpenAI API key + deployment aanmaken voor model: "text-embedding-ada-002"](https://github.com/HR-ChatGPT/ChatGPT-UITGELEGD/tree/main/WORKSHOPS/AZURE)
 | 5. Jupyter Notebook aanmaken in CoLab of Anaconda
 | 6. DEMO [[DEMO]](#demo).
 
