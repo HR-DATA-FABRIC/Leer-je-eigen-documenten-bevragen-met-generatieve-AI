@@ -19,7 +19,7 @@ LEER RAG IMPLEMENTEREN MET LangChain + Azure + Python + JupyterNotebook + GitHub
 | 5. Jupyter Notebook aanmaken in CoLab of Anaconda
 | 6. DEMO [[DEMO]](#demo).
 
-<img align="center" width="1000" height="400" src=".\overview.PNG">
+<img align="center" width="1000" height="1000" src=".\overview.PNG">
 
 Deze GitHub Repository geeft inzicht hoe je met behulp van  Generatieve-AI (Gen-AI) je eigen documenten kunt bevragen.
 Deze Repository is bedoeld voor studenten en docenten van het hoger onderwijs die willen leren hoe ze RAG kunnen implementeren met behulp van Azure + LangChain + OpenAI in een Python Jupyter Notebook.
