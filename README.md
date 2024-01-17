@@ -72,7 +72,7 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 
 
 ### Retrieval-Augmented Generation Workflow:
-<img align="center" width="1000" height="400" src=".\rag_towardsdatascience.com.png">
+<img align="center" width="1000" height="400" src=".\rag_visual-explaining2.png">
 
 
 [RAG: From theory to implementation with LangChain](https://towardsdatascience.com/retrieval-augmented-generation-rag-from-theory-to-langchain-implementation-4e9bd5f6a4f2)
@@ -84,6 +84,7 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 * [RAG topassen via Google Colab](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/use_cases/question_answering/index.ipynb)
 * [Retrieval Augmented Generation using Azure Machine Learning prompt flow (preview)](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2#why-use-rag)
 * [Compare PDF Question Answering Systems Build with OpenAI and Google VertexAI](https://medium.com/@kelvin.lu.au/compare-pdf-question-answering-with-openai-and-google-vertexai-46638d62327b)
+* [All You Need to Know to Build Your First LLM App](https://towardsdatascience.com/all-you-need-to-know-to-build-your-first-llm-app-eb982c78ffac)
 *******
 
 
