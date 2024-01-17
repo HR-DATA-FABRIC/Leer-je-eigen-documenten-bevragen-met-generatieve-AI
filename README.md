@@ -74,7 +74,7 @@ In het hoger onderwijs kan RAG worden ingezet om studenten te helpen bij het vin
 
 
 ### Retrieval-Augmented Generation Workflow:
-<img align="center" width="1000" height="400" src=".\rag_visual-explaining2.png">
+<img align="center" width="400" height="1000" src=".\rag_visual-explaining2.png">
 
 
 [RAG: From theory to implementation with LangChain](https://towardsdatascience.com/retrieval-augmented-generation-rag-from-theory-to-langchain-implementation-4e9bd5f6a4f2)
